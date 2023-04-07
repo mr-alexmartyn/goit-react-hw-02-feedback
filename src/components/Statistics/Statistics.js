@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import {
-  StatisticSection,
-  StatisticTitle,
-  StatisticItem,
-} from 'components/FeedStyled.styled';
+import { StatisticSection, StatisticItem } from 'components/FeedStyled.styled';
 
 class Statistics extends Component {
   countTotalFeedback = () => {
@@ -16,8 +12,6 @@ class Statistics extends Component {
   render() {
     return (
       <StatisticSection>
-        <StatisticTitle>Statistics</StatisticTitle>
-
         <StatisticItem>Good: {this.props.good}</StatisticItem>
         <StatisticItem>Neutral: {this.props.neutral}</StatisticItem>
         <StatisticItem>Bad: {this.props.bad}</StatisticItem>
